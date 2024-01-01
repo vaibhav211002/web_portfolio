@@ -1,0 +1,135 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+/* Custom Background Color */
+.bg-custom-color {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Navbar Brand Styling */
+.navbar-brand spam {
+    color: red;
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: max-content;
+    margin-top: 100px;
+    margin-left: 55px; /* Distance from the left side */
+}
+
+.box1 {
+    color: white;
+    font-size: 90px; /* Adjust the font size as needed */
+}
+
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+
+.box1 span {
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Adjust the color as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .box {
+        margin-left: 20px; /* Adjust as needed for smaller screens */
+    }
+
+    .box1 {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+    
+    
+}
+
+.wrapper{
+    display: flex;
+    margin-left: -0px;
+    width: max-content;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #e80c0c;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: 58px;
+    height: 109%;
+    width: 100%;
+    background: none;
+    animation: typing 0.1s steps(9) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }  
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+        flex-direction: row; /* Change direction to row for same line layout */
+        align-items: center; /* Align items to the center horizontally */
+    }
+
+    .dynamic-txts li {
+        font-size: 45px; /* Adjust the font size for smaller screens */
+    }
+
+    .static-txt{
+        margin-bottom: 25px;
+    }
+}
