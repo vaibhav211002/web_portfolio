@@ -32,4 +32,37 @@ body {
     color: red;
 }
 
+.small-image {
+    max-height: 250px;
+    min-width: 170px;/* Adjust the height as needed */
+  }
 
+  .opacity-50 {
+    opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
+  }
+
+
+  .bg-custom-color-one{
+    background-color: rgb(111, 108, 105);
+  }
+
+
+  .small-image-card {
+    max-width: 540px;
+  }
+
+  @media (max-width: 767px) {
+    .small-image-card {
+      margin-bottom: 20px; /* Adjust spacing between vertical cards */
+    }
+  }
+
+  .small-image-card {
+    max-width: 540px;
+    opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) */
+    transition: opacity 0.3s ease; /* Optional: Add a smooth transition effect */
+  }
+
+  .small-image-card:hover {
+    opacity: 1; /* Adjust the opacity value on hover */
+  }
