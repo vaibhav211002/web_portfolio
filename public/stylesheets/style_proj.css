@@ -33,6 +33,7 @@ body {
 }
 
 .small-image {
+
     max-height: 250px;
     min-width: 170px;/* Adjust the height as needed */
   }
@@ -49,6 +50,7 @@ body {
 
   .small-image-card {
     max-width: 540px;
+    background-color: violet;
   }
 
   @media (max-width: 767px) {
@@ -62,7 +64,7 @@ body {
 
   .small-image-card {
     max-width: 540px;
-    opacity: 0.4; /* Adjust the opacity value (0.0 to 1.0) */
+    /* opacity: 0.4;  */
     transition: opacity 0.3s ease; /* Optional: Add a smooth transition effect */
   }
 
@@ -71,7 +73,16 @@ body {
     
   }
 
-  .text-body-secondary{
-    color: #fff;
-    text-decoration: none;
+
+
+  @media (max-width: 767px) {
+    .col-md-4 img {
+      margin-left: 170px; /* Add 50px margin from the left on screens less than 767px */
+    }
+  }
+
+
+  .card-body{
+    z-index: -10;
+    /* opacity: 0.4; */
   }
