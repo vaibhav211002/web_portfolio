@@ -8,18 +8,18 @@ body {
     font-family: 'Poppins', sans-serif;
     background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
     background-size: cover;
-    color: #fff;
+    color: #070707;
 }
 
 .about-me-section {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Opague white background */
+    background-color: rgba(14, 13, 13, 0.8); /* Opague white background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
-   
+   color: azure;
 }
 
 .profile-image {
@@ -42,13 +42,16 @@ body {
 
 .social-links {
     margin-top: 20px;
+    color: azure;
+    text-decoration: none;
 }
 
 .social-links a {
     display: inline-block;
     margin-right: 10px;
-    color: #333;
+    color: #fffafa;
     font-style: bold;
+    text-decoration: none;
 }
 
 .about-me-text {
@@ -63,10 +66,14 @@ body {
     }
 
     .profile-image {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
+        width: 75%;
+        height: 75%;
+        margin-right: 70px;
         margin-bottom: 20px;
         border-radius: 10px 10px 0 0;
     }
+}
+
+spam{
+    color: red;
 }

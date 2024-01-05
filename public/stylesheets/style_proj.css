@@ -43,9 +43,9 @@ body {
   }
 
 
-  .bg-custom-color-one{
-    background-color: rgb(111, 108, 105);
-  }
+  /* .bg-custom-color-one{
+    background-color: rgb(18, 18, 17);
+  } */
 
 
   .small-image-card {
@@ -82,7 +82,3 @@ body {
   }
 
 
-  .card-body{
-    z-index: -10;
-    /* opacity: 0.4; */
-  }
